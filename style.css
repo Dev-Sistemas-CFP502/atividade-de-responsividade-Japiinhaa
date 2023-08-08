@@ -33,11 +33,10 @@ p {
 
 .menu ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   margin: 2rem;
-  display: flex;
-  flex-wrap: wrap;
 
 }
 
@@ -58,6 +57,7 @@ p {
 
 .conteudo {
   display: flex;
+  flex-wrap: wrap;
   max-width: 62.5rem;
   background: #000000;
   padding: 2rem;
@@ -68,6 +68,8 @@ p {
 
 }
 
+
+
 .introducao-img{
   display: flex;
   gap: 1rem;
@@ -75,7 +77,8 @@ p {
   align-items: center;
   background-color: #111111;
   padding: 1rem;
-  
+  overflow-x: scroll;
+
 }
 
 .introducao-img::-webkit-scrollbar {
@@ -93,7 +96,6 @@ p {
 
 .introducao-img img{
     height: 25rem;
-
 
 }
 
@@ -129,7 +131,7 @@ p {
   max-width: 62.5rem;
   margin: 1rem auto;
   align-items: center;
-
+  
 }
 
 .vantagens-titulo{
@@ -172,3 +174,9 @@ p {
 
 }
 
+@media screen and (max-width: 600px) {
+  .vantagens{
+    display: inline-block;
+  }
+  
+}
